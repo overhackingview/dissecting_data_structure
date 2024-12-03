@@ -132,7 +132,7 @@ public class LinkedList<E>
      */
     @SuppressWarnings("this-escape")
     public LinkedList(Collection<? extends E> c) {
-        this();
+        this(); // TODO (ohv) Just for curiosity. probably this line is included just for readability, because it does't affects performance. https://github.com/overhackingview/challenger_time/blob/main/java/performance_memory_bytecode/instanciation_info.md
         addAll(c);
     }
 
