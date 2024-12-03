@@ -90,11 +90,11 @@ import java.util.stream.Stream;
  * @param <E> the type of elements held in this collection
  */
 
-//TODO explains why those extention and implementations
+//TODO (ohv) explains why those extention and implementations
 public class LinkedList<E>
     extends AbstractSequentialList<E>
     implements List<E>, Deque<E>, Cloneable, java.io.Serializable
-{   //TODO maybe add a comment about the reason of using transient (Serialization)
+{   //TODO (ohv) maybe add a comment about the reason of using transient (Serialization)
     transient int size = 0;
 
     /**
@@ -106,7 +106,7 @@ public class LinkedList<E>
      * Pointer to last node.
      */
     transient Node<E> last;
-    //TODO just for curiosity add about the discussion to remove this method
+    //TODO (ohv) just for curiosity add about the discussion to remove this method
     //https://bugs.openjdk.java.net/browse/JDK-8011786
     /*
     void dataStructureInvariants() {
@@ -140,7 +140,7 @@ public class LinkedList<E>
      * Links e as first element.
      */
     private void linkFirst(E e) {
-        final Node<E> f = first; // TODO talks about the reason of using final
+        final Node<E> f = first; // TODO (ohv) talks about the reason of using final
         final Node<E> newNode = new Node<>(null, e, f);
         first = newNode;
         if (f == null)
@@ -190,7 +190,7 @@ public class LinkedList<E>
         final E element = f.item;
         final Node<E> next = f.next;
         f.item = null;
-        f.next = null; // help GC //TODO if possible, checks why this line helps GC
+        f.next = null; // help GC //TODO (ohv) if possible, checks why this line helps GC
         first = next;
         if (next == null)
             last = null;
@@ -1293,7 +1293,7 @@ public class LinkedList<E>
     }
 
     // all operations are delegated to the reverse-ordered views.
-    // TODO audit all overridden methods
+    // TODO  audit all overridden methods
     @SuppressWarnings("serial")
     static class ReverseOrderLinkedListView<E> extends LinkedList<E> implements java.io.Externalizable {
         final LinkedList<E> list;
