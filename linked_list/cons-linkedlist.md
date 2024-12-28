@@ -2,6 +2,8 @@
 ## perf
 https://www.linkedin.com/pulse/simple-tips-tricks-vitalii-serdiuk?utm_source=perplexity
 
+https://douglasrumbaugh.com/post/lists-revisited/?utm_source=perplexity
+
 ##description
 why the java.utils.linkedlist.java is not widely used in huge applications
 
