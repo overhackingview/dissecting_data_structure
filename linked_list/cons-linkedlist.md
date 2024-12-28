@@ -4,7 +4,7 @@ https://www.linkedin.com/pulse/simple-tips-tricks-vitalii-serdiuk?utm_source=per
 
 https://douglasrumbaugh.com/post/lists-revisited/?utm_source=perplexity
 
-##description
+## description
 why the java.utils.linkedlist.java is not widely used in huge applications
 
 The `java.util.LinkedList` is not widely used in large-scale applications due to its **performance limitations** compared to other data structures like `ArrayList` or `ArrayDeque`. Below are the main reasons:
